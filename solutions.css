@@ -81,3 +81,78 @@
   filter: sepia(0.5) grayscale(0.2);
   border-radius: 20px;
 }
+
+/* X ex */
+.ex-10-icon{
+  animation-name: ex10;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes ex10 {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(-360deg);}
+}
+
+/* XI ex */
+.ex-11-icon:hover{
+  animation-name: ex11;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes ex11 {
+  75% {transform: rotate(270deg);}
+  100% {transform: rotate(0deg);}
+}
+
+/* XII ex */
+.ex-12-button:hover .ex-12-top-white{
+  animation-name: ex12-top;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes ex12-top {
+  50% {left: calc(100% - 60px);}
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+  animation-name: ex12-bottom;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes ex12-bottom {
+  50% {right: calc(100% - 60px);}
+}
+
+/* XIII ex */
+.ex-13-button:hover .ex-13-top-white{
+  animation-name: ex13-top;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes ex13-top {
+  20% {top: -10px; left: calc(100% - 30px);}
+  40% {top: 60px; left: calc(100% - 30px);}
+  60% {top: 60px; left: -30px;}
+  80% {top: -10px; left: -30px;}
+  100% {top: -10px; left: 10%;}
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+  animation-name: ex13-bottom;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes ex13-bottom {
+  20% {bottom: -10px; right: calc(100% - 30px);}
+  40% {bottom: 60px; right: calc(100% - 30px);}
+  60% {bottom: 60px; right: -30px;}
+  80% {bottom: -10px; right: -30px;}
+  100% {bottom: -10px; right: 10%;}
+}
